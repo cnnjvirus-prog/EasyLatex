@@ -49,3 +49,8 @@ description: Generate or update thesis LaTeX sources from structured user materi
 - Do not overwrite `pages/abstract.tex`, `pages/enabstract.tex`, or `pages/innovation.tex` with task content.
 - Do not use raw `\bibliography`.
 - Do not move the root thesis entry file into a subdirectory.
+
+## Maintenance Sync Rule
+
+- When the parent `whuthesis` workspace gains new generic conversion capabilities, workflow improvements, template conventions, or reusable review logic, update the corresponding generic parts in `EasyLatex/` in the same task whenever feasible.
+- Sync only the generic layer into `EasyLatex/`. Keep repository-specific rules, file contracts, and school-specific template constraints outside the generic toolkit unless they have been explicitly generalized.

@@ -38,3 +38,8 @@ description: Review, audit, or repair thesis LaTeX sources against the EasyLatex
 - prefer the smallest patch that restores compliance
 - preserve user manuscript content whenever possible
 - change structure before changing prose
+
+## Maintenance Sync Rule
+
+- When the parent `whuthesis` workspace gains new generic conversion capabilities, workflow improvements, template conventions, or reusable review logic, update the corresponding generic parts in `EasyLatex/` in the same task whenever feasible.
+- Sync only the generic layer into `EasyLatex/`. Keep repository-specific rules, file contracts, and school-specific template constraints outside the generic toolkit unless they have been explicitly generalized.
