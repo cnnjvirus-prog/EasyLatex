@@ -52,6 +52,7 @@ Turn a structured `.txt` source file into repository-ready LaTeX sources without
    - check `bib-backend`
    - check `bib-resource`
    - check auto frontmatter rules
+   - check any official standard/example constraints surfaced by the target repo rules
 
 ## Input Rules
 
@@ -67,6 +68,7 @@ Turn a structured `.txt` source file into repository-ready LaTeX sources without
 - Do not handwrite covers, originality statements, or license pages.
 - Do not replace shared wrapper files with task-specific manuscript text.
 - Use `\printbibliography` rather than raw bibliography commands.
+- If the target repo rules add official abstract, keyword, or layout checks, run them before delivery.
 
 ## Extension Boundary for DOCX
 

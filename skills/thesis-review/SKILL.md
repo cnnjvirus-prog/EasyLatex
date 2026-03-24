@@ -21,10 +21,11 @@ description: Review, audit, or repair thesis LaTeX sources against the EasyLatex
 2. Broken repository structure
 3. Missing `\whusetup` fields
 4. Missing `bib-backend` or `bib-resource`
-5. Shared wrapper files overwritten with task content
-6. Manual frontmatter or bibliography hacks
-7. Placeholder handling regressions from source conversion
-8. TexPage compatibility risks
+5. Drift from any official standard/example set referenced by the active repo rules
+6. Shared wrapper files overwritten with task content
+7. Manual frontmatter or bibliography hacks
+8. Placeholder handling regressions from source conversion
+9. TexPage compatibility risks
 
 ## Conversion Checks
 
@@ -32,6 +33,7 @@ description: Review, audit, or repair thesis LaTeX sources against the EasyLatex
 - `【留空】` was not expanded into fabricated prose
 - reference input stayed traceable to the original numbered entries
 - task-specific content lives in task-specific files
+- if the repo rules define abstract-length or keyword-count constraints, those constraints are checked explicitly
 
 ## Fix Strategy
 
